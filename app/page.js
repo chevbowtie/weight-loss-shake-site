@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 
-export default function Home() {
+export default function Page() {
   return (
     <>
       <Head>
@@ -10,12 +10,13 @@ export default function Home() {
         <meta name="keywords" content="weight loss shake, best meal replacement shake, protein shake for weight loss, natural fat burner, healthy weight loss drink, diet shake, low calorie shake, keto shake" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
+      
       <main className="min-h-screen bg-gray-100 flex flex-col items-center p-4">
         <header className="w-full max-w-3xl bg-white shadow-md rounded-xl p-6 text-center">
           <h1 className="text-3xl font-bold text-green-600">The Best Natural Weight Loss Shake</h1>
           <p className="mt-2 text-gray-700">Lose weight naturally with our scientifically formulated shake, packed with high protein, fiber, and essential nutrients.</p>
         </header>
-        
+
         <section className="mt-6 w-full max-w-3xl bg-white shadow-md rounded-xl p-6">
           <h2 className="text-2xl font-semibold text-gray-800">Why Choose Our Shake?</h2>
           <ul className="mt-4 space-y-2 text-gray-700">
@@ -25,15 +26,17 @@ export default function Home() {
             <li>✔ Supports Metabolism & Fat Burning</li>
           </ul>
         </section>
-        
+
         <section className="mt-6 w-full max-w-3xl bg-white shadow-md rounded-xl p-6 text-center">
           <h2 className="text-2xl font-semibold text-gray-800">Start Your Weight Loss Journey Today!</h2>
           <p className="mt-2 text-gray-600">Get your first order with a special discount.</p>
+          
+          {/* ✅ "Order Now" button with correct link */}
           <Link href="https://bretthoneychurch.goherbalife.com/" target="_blank" rel="noopener noreferrer">
-  		<button className="mt-4 px-6 py-3 bg-green-600 text-white font-bold rounded-xl shadow hover:bg-green-700 transition">
-    		Order Now
-  		</button>
-	  </Link><button className="mt-4 px-6 py-3 bg-green-600 text-white font-bold rounded-xl shadow hover:bg-green-700 transition">
+            <button className="mt-4 px-6 py-3 bg-green-600 text-white font-bold rounded-xl shadow hover:bg-green-700 transition">
+              Order Now
+            </button>
+          </Link>
         </section>
       </main>
     </>
