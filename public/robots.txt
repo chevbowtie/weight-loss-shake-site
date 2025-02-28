@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://weight-loss-shake-site-hrc9.vercel.app/sitemap.xml
