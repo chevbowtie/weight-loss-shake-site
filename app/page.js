@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -28,9 +29,11 @@ export default function Home() {
         <section className="mt-6 w-full max-w-3xl bg-white shadow-md rounded-xl p-6 text-center">
           <h2 className="text-2xl font-semibold text-gray-800">Start Your Weight Loss Journey Today!</h2>
           <p className="mt-2 text-gray-600">Get your first order with a special discount.</p>
-          <button className="mt-4 px-6 py-3 bg-green-600 text-white font-bold rounded-xl shadow hover:bg-green-700 transition">
-            Order Now
-          </button>
+          <Link href="https://bretthoneychurch.goherbalife.com/" target="_blank" rel="noopener noreferrer">
+  		<button className="mt-4 px-6 py-3 bg-green-600 text-white font-bold rounded-xl shadow hover:bg-green-700 transition">
+    		Order Now
+  		</button>
+	  </Link><button className="mt-4 px-6 py-3 bg-green-600 text-white font-bold rounded-xl shadow hover:bg-green-700 transition">
         </section>
       </main>
     </>
